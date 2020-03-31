@@ -20,120 +20,109 @@
  </head>
 
  <body>
-
      <div class="container">
          <h1>menu responsive</h1>
          <nav class="navbar navbar-inverse" width="100%">
              <div class="navbar-header">
-                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
-                     <span class="sr-only">Apparaitre/Disparaitre Navigation</span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span>
-                     <span class="icon-bar"></span></button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1">
+                <span class="sr-only">Apparaitre/Disparaitre Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button>
              </div>
              <div class="navbar-collapse collapse" id="collapse-1">
                  <ul class="nav navbar-nav">
-                     <li class="active">
-                         <a href="#">
-                             <img src="img/accueil.png" width="30" alt="Accueil">
-                         </a>
-                     </li>
-                     <li><a href="#">Qui sommes nous ?</a></li>
-                     <li><a href="#">Info/Contact</a></li>
-                     <li><a href="#">Nos sorties</a></li>
-                     <li><a href="#">Activités</a></li>
-                     <li><a href="#">Partenaires</a></li>
-
-                 </ul>
+                    <li class="active">
+                        <a href="#"><img src="img/accueil.png" width="30" alt="Accueil"></a>
+                    </li>
+                    <li><a href="#">Qui sommes nous ?</a></li>
+                    <li><a href="#">Info/Contact</a></li>
+                    <li><a href="#">Nos sorties</a></li>
+                    <li><a href="#">Activités</a></li>
+                    <li><a href="#">Partenaires</a></li>
              </div>
-
          </nav>
-
          <div class="jumbotron">
              <h1>MON PROJET IMMOBILIER</h1>
-
              <p>Je suis un bref paragraphe explicatif vous donnant fortement envie d'aller plus loin ou pas!</p>
-
              <a class="btn btn-primary btn-lg " href="recherche.html" role="button">En savoir plus</a>
-
-
          </div>
          <ul class="breadcrumb">
-             <li>
-                 <a href="index.php">accueil</a>
-             </li>
-             <li class="active">
-                 <a href="#">Info/Contact</a>
-             </li>
+            <li>
+                <a href="index.php">accueil</a>
+            </li>
+            <li class="active">
+                <a href="#">Info/Contact</a>
+            </li>
          </ul>
          <header class="row">
-             <div class="col-md-12">
-                 EN TETE
-             </div>
+            <div class="col-md-12">
+                EN TETE
+            </div>
          </header>
          <div class="row">
-             <nav class="col-md-2">
-                 Menu
-             </nav>
-             <section class="col-md-10">
-                 <form role="form" class="form-inline" id="form1" action="traitement.php" method="get" enctype="multipart/form-data">
-                     <div class="form-group" data-toggle="buttons">
-                         <label class="btn btn-primary active">
-                             <input type="radio" name="hangar" id="ouvert" autocomplete="off" checked="checked"> <img src="couvert2.jpg"
-                                 style="margin-right: 10px">Ouvert
-                         </label>
-                         <label class="btn btn-primary">
-                             <input type="radio" name="hangar" id="fermer" autocomplete="off"><img
-                                 src="choix_abrisV2.jpg" style="margin-right: 10px">Fermer
-                         </label>
+            <nav class="col-md-2">
+                Menu
+            </nav>
+            <section class="col-md-10">
+                <form role="form" action="traitement.php" method="get" enctype="multipart/form-data">
+                    <div class="form-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="hangar" id="ouvert" autocomplete="off" checked="checked"> <img src="couvert2.jpg"
+                                style="margin-right: 10px">Ouvert
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="hangar" id="fermer" autocomplete="off"><img
+                                src="choix_abrisV2.jpg" style="margin-right: 10px">Fermer
+                        </label>
                      </div>
                      <br>
                      <br>
-                     <div class="form-group">
-                         <label class="form-control" for="date">Date debut : </label>
-                         <input type="date" class="date-picker" id="date">
-                     </div>
-                     <br>
-                     <br>
-                     <div class="form-group" data-toggle="buttons">
-                         <label class="btn btn-primary active">
-                             <input type="radio" name="typev" id="caravane" autocomplete="off" checked="checked">Caravane
-                         </label>
-                         <label class="btn btn-primary">
-                             <input type="radio" name="typev" id="camping-car" autocomplete="off">Camping-car
-                         </label>
-                         <label class="btn btn-primary ">
-                             <input type="radio" name="typev" id="bateau" autocomplete="off">Bateau
-                         </label>
-                         <label class="btn btn-primary">
-                             <input type="radio" name="typev" id="autre" autocomplete="off">Autre...
-                         </label>
-                     </div>
-                     <br>
-                     <br>
-                     <div class="btn-group" data-toggle="buttons">
-                         <label class="btn btn-danger  active">
-                             <input type="checkbox" name="raccordement1" id="raccordement1"
-                                 checked="checked">Raccordement électrique
-                         </label>
-                         <label class="btn btn-danger ">
-                             <input type="checkbox" name="raccordement2" id="raccordement2" checked="checked">Raccordement eau
-                         </label>
-                         <label class="btn btn-danger">
-                             <input type="checkbox" name="raccordement0" id="raccordement0" checked="checked">Aucun raccordement
-                         </label>
+                     <div class="form-inline">
+                        <label class="form-control" for="date">Date debut : </label>
+                        <input type="date" class="date-picker" id="date">
                      </div>
                      <br>
                      <br>
                      <div class="form-group" data-toggle="buttons">
-                         <label class="btn btn-primary">
-                             <input type="checkbox" autocomplete="off">
-                             Plus de 6 mètres
-                         </label>
-                         <label class="btn btn-primary">
-                             <input type="checkbox" autocomplete="off" checked>
-                             Moins de 6 mètres
-                         </label>
+                        <label class="btn btn-primary active">
+                            <input type="radio" name="typev" id="caravane" autocomplete="off" checked="checked">Caravane
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="typev" id="camping-car" autocomplete="off">Camping-car
+                        </label>
+                        <label class="btn btn-primary ">
+                            <input type="radio" name="typev" id="bateau" autocomplete="off">Bateau
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio" name="typev" id="autre" autocomplete="off">Autre...
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-danger  active">
+                            <input type="checkbox" name="raccordement1" id="raccordement1"
+                                checked="checked">Raccordement électrique
+                        </label>
+                        <label class="btn btn-danger ">
+                            <input type="checkbox" name="raccordement2" id="raccordement2" checked="checked">Raccordement eau
+                        </label>
+                        <label class="btn btn-danger">
+                            <input type="checkbox" name="raccordement0" id="raccordement0" checked="checked">Aucun raccordement
+                        </label>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group" data-toggle="buttons">
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off">
+                            Plus de 6 mètres
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="checkbox" autocomplete="off" checked>
+                            Moins de 6 mètres
+                        </label>
                      </div>
                      <br>
                      <br>
@@ -143,43 +132,38 @@
                          Verifier les disponibilités
                      </button>-->
 
-                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maModal">Verifier les disponibilités</button>
-
-                     <div class="modal" id="maModal">
-                         <div class="modal-dialog">
-                             <div class="modal-content">
-                                 <div class="modal-header">
-                                     <button type="button" class="close" data-dismiss="modal" aria-label="close"><span
-                                             aria-hidden="true">&times;</span></button>Vérification des disponibilités
-                                 </div>
-                                 <div class="modal-body">
-                                     Places restantes
-                                 </div>
-                                 <div class="modal-footer"><button type="button" class="btn btn-default"
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#maModal">Verifier les disponibilités</button>
+                    <div class="modal" id="maModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="close"><span
+                                         aria-hidden="true">&times;</span></button>Vérification des disponibilités
+                                </div>
+                                <div class="modal-body">
+                                    Places restantes
+                                </div>
+                                <div class="modal-footer"><button type="button" class="btn btn-default"
                                          data-dismiss="modal">annuler</button><button type="button"
                                          class="btn btn-primary" id="envoie">Envoyer les données</button>
                                 </div>
                             </div>
                          </div>
                      </div>
-
                  </form>
-
-
-
                  <div class="row">
                      <article class="col-md-10">
-                         Article
+                        Article
                      </article>
                      <aside class="col-md-2">
-                         Aside
+                        Aside
                      </aside>
                  </div>
              </section>
          </div>
          <footer class="row">
              <div class="col-sm-12">
-                 Pied de page1
+                Pied de page1
              </div>
          </footer>
      </div>
